@@ -6,13 +6,15 @@ import platform
 opSys = platform.system()
 
 if opSys == 'Windows':
-
+    print('Windows')
+    os.system('pause')
     
 elif opSys == 'Darwin':
-    print('...')
+    print('Mac')
+    read -n1 -r -p "Press any key to continue..." key
 
 elif opSys == 'Linux':
-    print('OS NOT SUPPORTED; VIRUS ABORTED')
+    print('Linux')
     
 else:
     print('You are Lucky')
